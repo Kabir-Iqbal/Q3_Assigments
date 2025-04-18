@@ -165,16 +165,14 @@ stored_data = load_data()
 
 # Navigation bar 
 
-st.title("🔐 Secure Data Encryption System")
+st.title("🔒 Secure Data Encryption System")
 menu = ["Home", "Register", "Login", "Store Data", "Retrieve Data" ]
 choice = st.sidebar.selectbox("Navigation", menu)
 
 
 if choice == "Home":
-    st.subheader("Welcome to my 🔐 Secure Data Encryption System")
-    st.markdown("""Develop a Streamlit-based secure data storage and retrieval system where: Users store data with a unique passkey.
-                  Users decrypt data by providing the correct passkey. Multiple failed attempts result in a forced 
-                  reauthorization (login page).The system operates entirely in memory without external databases""")
+    st.subheader("🏠 Welcome to the Secure Data System")
+    st.markdown("""Use this app to **securely store and retrieve data** using unique passkeys""")
 elif choice == "Register":
     st.subheader(" ✏️ Register new user")
     username = st.text_input("Choose Username")
@@ -226,7 +224,7 @@ elif choice == "Store Data":
     if not st.session_state.authenticated_user:
         st.warning("Please Login first")
     else :
-        st.subheader("Store Encrypted Data")
+        st.subheader("📂 Store Data Securely")
         data = st.text_area("Enter Data to encrypty")
         passkey = st.text_input("Encryption key (passphrase)", type="password" )
 
