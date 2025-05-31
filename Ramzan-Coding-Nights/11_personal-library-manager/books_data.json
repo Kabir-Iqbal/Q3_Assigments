@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Python",
+        "author": "Kabir",
+        "year": "2002",
+        "genre": "python",
+        "read": true,
+        "image": "book_images\\book2.jpg"
+    },
+    {
+        "title": "Python",
+        "author": "Kabir iqbal",
+        "year": "2023",
+        "genre": "python",
+        "read": true,
+        "image": "book_images\\book1.jpg"
+    }
+]
